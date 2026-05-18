@@ -4,7 +4,7 @@ body {
     background-image: url(../images/boxing-stage.png);
 	background-repeat:no-repeat;
 	background-attachment:fixed;
-	background-position: top center;
+	background-position: bottom center;
 }
 
 /*Start CSS for navigation*/
@@ -422,7 +422,7 @@ footer {
 }
 
 @media screen and (max-width: 549px) {
-    body { background-color: #0c0c0c; background-image: none; }
+    body { background-color: #0c0c0c; }
     .hamburger { font-size: 28px; margin-right: 8px; }
     .container > div { width: 100%; padding: 0 6%; }
     .title { padding-top: 16px; padding-bottom: 5px; padding-left: 36px; }
