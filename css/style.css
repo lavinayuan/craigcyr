@@ -4,7 +4,7 @@ body {
     background-image: url(../images/boxing-stage.png);
 	background-repeat:no-repeat;
 	background-attachment:fixed;
-	background-position: bottom center;
+	background-position: center center;
 }
 
 /*Start CSS for navigation*/
