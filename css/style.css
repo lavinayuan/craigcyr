@@ -1,7 +1,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
 body {
     background-color:#000; 
-    background-image: url(images/boxing-stage.png);
+    background-image: url(../images/boxing-stage.png);
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-position: top center;
@@ -175,7 +175,7 @@ p {
 
 .dot {
 	height:1px; 
-	background-image:url(images/dot.gif); 
+	background-image:url(../images/dot.gif); 
 	background-repeat:x; 
 	margin:24px 0px;
 }
@@ -200,15 +200,16 @@ p {
 }
 
 .accordion:after {
-  content: '\⯆'; 
-  font-size: 18px;
+  content: '\25BC';
+  font-family: Arial, sans-serif; 
+  font-size: 18px; 
   color: #e39a09;
   float: right;
   margin-left: 5px;
 }
 
 .active:after {
-  content: "\⯅"; 
+  content: '\25B2'; 
 }
 
 .panel {
@@ -252,7 +253,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.85);
   z-index: 2;
   cursor: pointer;
 }
@@ -269,7 +270,7 @@ p {
   max-height: 85vh; /*max-height and overflow-y must be defined for the content to be scrollable*/
   overflow-y: auto;
 }
-.legal p { color: #ddd; font-size: 1rem; }
+.legal p { color: #bbb; font-size: 1rem; }
 .legal ul {
     list-style-type: disc;
     padding-left: 40px;
@@ -282,7 +283,7 @@ p {
 /*End CSS for the Equipment page*/
 
 
-/*Start CSS for the contact form*/
+/*Start CSS for the contact form and telephone number*/
     form {
 		background:linear-gradient(rgba(120, 120, 120, 0.5));
 		padding: 32px 36px;
@@ -365,7 +366,26 @@ p {
 		border-top: 6px solid #999; /* Color of the arrow */
 		pointer-events: none; /* Allows clicks to pass through the arrow to the select element */
 	}
-/*End CSS for the contact form*/
+
+    .tel,.tel:visited { /*for small screens */   
+        /* display:block;  */
+        color: #bababa; 
+        text-decoration:none; 
+    } 
+
+    .tel:hover,.tel:focus { 
+        color: #bababa;
+    } 
+
+    @media screen and (min-width: 28.5em) { /* for larger screens */ 
+    .tel,.tel:visited { 
+        background:none; 
+        cursor:default; 
+    } 
+    .tel,.tel:focus { color: #bababa; } 
+    }
+
+/*End CSS for the contact form & telphone number*/
 
 
 footer {
