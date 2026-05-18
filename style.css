@@ -253,7 +253,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.85);
+  background-color: rgba(0,0,0,0.8);
   z-index: 2;
   cursor: pointer;
 }
@@ -275,7 +275,7 @@ p {
     list-style-type: disc;
     padding-left: 40px;
 	line-height: 2;
-    color: #bbb;
+    color: #aaa;
     font-size: 1rem;
 }
 .legal ul li { padding-left: 16px; }
