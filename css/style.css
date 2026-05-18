@@ -201,8 +201,8 @@ p {
 
 .accordion:after {
   content: '\25BC';
-  font-family: Arial, sans-serif; 
-  font-size: 18px; 
+  font-family: 'Roboto', sans-serif; 
+  font-size: 16px; 
   color: #e39a09;
   float: right;
   margin-left: 5px;
@@ -253,7 +253,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.85);
+  background-color: rgba(0,0,0,0.8);
   z-index: 2;
   cursor: pointer;
 }
@@ -275,7 +275,7 @@ p {
     list-style-type: disc;
     padding-left: 40px;
 	line-height: 2;
-    color: #ddd;
+    color: #aaa;
     font-size: 1rem;
 }
 .legal ul li { padding-left: 16px; }
@@ -422,6 +422,7 @@ footer {
 }
 
 @media screen and (max-width: 549px) {
+    body { background: #0c0c0c; }
     .hamburger { font-size: 28px; margin-right: 8px; }
     .container > div { width: 100%; padding: 0 6%; }
     .title { padding-top: 16px; padding-bottom: 5px; padding-left: 36px; }
