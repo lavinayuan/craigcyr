@@ -422,6 +422,7 @@ footer {
 }
 
 @media screen and (max-width: 549px) {
+    body { background: #0c0c0c; }
     .hamburger { font-size: 28px; margin-right: 8px; }
     .container > div { width: 100%; padding: 0 6%; }
     .title { padding-top: 16px; padding-bottom: 5px; padding-left: 36px; }
