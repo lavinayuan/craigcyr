@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Craig Cyr | Movie Gallery</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300">
+  <link rel="stylesheet" href="css/modal.css" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"><a href="index.html"><img src="images/craig-logo.webp" /></a></div> 
+
+        <div class="hamburger" id="hamburger">☰</div>
+        
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="movie.html">Movie Gallery</a></li>
+            <li><a href="model.html">Movie Gallery</a></li>
+            <li class="has-submenu">
+                <a href="crcpicture-productions.html">CRCpicture Productions <span class="arrow"></span> </a>
+                <ul class="submenu">
+                    <li><a href="services.html">Services</a></li>
+                    <li class="has-submenu">
+                    <a href="equipment-rentals.html">Equipment & Rentals <span class="arrow"></span> </a>
+                        <ul class="submenu">
+                            <li><a href="equipment-rentals.html#camera-film-gear">Camera/Film Gear</a></li>
+                            <li><a href="equipment-rentals.html#stunt-gear">Stunt Gear</a></li>
+                            <li><a href="equipment-rentals.html#props-wardrobe">Props & Wardrobe</a></li>
+                            <li><a href="equipment-rentals.html#sets">Sets</a></li>
+                            <li><a href="equipment-rentals.html#film-weapons">Weapons and Firearms</a></li>
+                            <li><a href="equipment-rentals.html#vehicles-film-sets">Vehicles/Film Sets Only</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="title"><h1>Movie Gallery</h1></div>
+    <div class="wrapper">
+        <div class="gallery">
+        
+            <div><img class="thumb" src="movie-thumb/001.jpg" data-full="movie/001.webp"></div>
+            <div><img class="thumb" src="movie-thumb/002.jpg" data-full="movie/002.webp"></div>
+            <div><img class="thumb" src="movie-thumb/003.jpg" data-full="movie/003.webp"></div>
+            <div><img class="thumb" src="movie-thumb/004.jpg" data-full="movie/004.webp"></div>
+            <div><img class="thumb" src="movie-thumb/005.jpg" data-full="movie/005.webp"></div>
+            <div><img class="thumb" src="movie-thumb/006.jpg" data-full="movie/006.webp"></div>
+            <div><img class="thumb" src="movie-thumb/007.jpg" data-full="movie/007.webp"></div>
+            <div><img class="thumb" src="movie-thumb/008.jpg" data-full="movie/008.webp"></div>
+            <div><img class="thumb" src="movie-thumb/009.jpg" data-full="movie/009.webp"></div>
+            <div><img class="thumb" src="movie-thumb/010.jpg" data-full="movie/010.webp"></div>
+            <div><img class="thumb" src="movie-thumb/015.jpg" data-full="movie/015.webp"></div>
+            <div><img class="thumb" src="movie-thumb/016.jpg" data-full="movie/016.webp"></div>
+            <div><img class="thumb" src="movie-thumb/014.jpg" data-full="movie/014.webp"></div>
+            <div><img class="thumb" src="movie-thumb/012.jpg" data-full="movie/012.webp"></div>
+            <div><img class="thumb" src="movie-thumb/020.jpg" data-full="movie/020.webp"></div>
+            <div><img class="thumb" src="movie-thumb/017.jpg" data-full="movie/017.webp"></div>
+        
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal" id="imageModal">
+            <span class="close" id="modalClose">&times;</span>
+            <img id="modalImage" src="" alt="Full Image">
+            <button class="modal-prev">❮</button>
+            <button class="modal-next">❯</button>	
+        </div>
+
+    </div>
+
+    <footer>
+      	&copy; 2015 Craig Cyr. All rights reserved.   
+    </footer>
+
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+
+
+
+</body>
+</html>
