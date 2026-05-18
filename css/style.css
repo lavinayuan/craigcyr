@@ -422,8 +422,7 @@ footer {
 }
 
 @media screen and (max-width: 549px) {
-    body { background-color: #1e1d1d; background-image:none; }
-    nav { background: #101010; }
+    body { background-color: #0c0c0c; background-image:none; } 
     .hamburger { font-size: 28px; margin-right: 8px; }
     .container > div { width: 100%; padding: 0 6%; }
     .title { padding-top: 16px; padding-bottom: 5px; padding-left: 36px; }
@@ -446,6 +445,7 @@ footer {
     .legal { padding: 48px 24px; }
     .legal ul { padding-left: 16px; }
     .legal ul li { padding-left: 12px; }
+    footer { color: #999; }
 }
 
 
