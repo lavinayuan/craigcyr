@@ -9,8 +9,6 @@ body {
 
 /*Start CSS for navigation*/
 nav { background: #272525; padding: 20px; position: sticky; top: 0; display: flex; justify-content: space-around; z-index: 1000; } 
-/*for the nav to be sticky on top, the top has to be set to 0*/
-/*background: linear-gradient(rgba(0,0,0,0.6)); - although a transparent nav looks cool, when there is lots of copy behind, it fights the copy.*/
 .logo img { width: 80%; }
 
 .menu { list-style: none; display: flex; align-items: center; }
@@ -23,7 +21,6 @@ nav { background: #272525; padding: 20px; position: sticky; top: 0; display: fle
 .has-submenu { position: relative; }
 
 .submenu { position: absolute; top: 100%; left: 0; background: #171717; list-style: none; min-width: 255px; display: none; box-shadow: 0 5px 15px rgba(0,0,0,0.3); border-radius: 5px; }
-/*top: 100% positions the submenu exactly at the bottom edge of its parent container*/
 
 .menu li:hover > .submenu { display: block; animation: fadeIn 0.3s ease; }
 
@@ -34,28 +31,11 @@ nav { background: #272525; padding: 20px; position: sticky; top: 0; display: fle
 .submenu li:hover > a { color: #e39a09; }
 
 .submenu .submenu { top: 0; left: -100%; } 
-/*the negative value shifts the submenu to the left - this is because the menu item on the parent level is the last one, there is no room on the right to open the submenu*/
 
 .submenu .submenu li:hover > a { color: #f1c40f; }
 
-/* CSS for submenu - when hover the submenu moves upward
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-} */
-
-/*the following code has issue on mobile - when clicking on a submenu, the last item of that submenu gets hover effect*/
 .menu li::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background: #cc3300; transition: width 0.3s ease; }
-/*transition: width enables a smooth, animated change when the width of an element is altered (in this case it's width: 0), rather than an abrupt snap to the new size*/
 .menu li:hover::after { width: 100%; }
-
-/* makes the red underline only appears for desktop
-@media (min-width: 1025px) {
-    .menu li:hover::after {
-        width: 100%;
-    }
-}
- */
 
 .arrow {
   width: 0.55em;
@@ -75,8 +55,6 @@ nav { background: #272525; padding: 20px; position: sticky; top: 0; display: fle
   transform: rotate(225deg);
   margin-top:0;
 }
-/*End CSS for navigation*/
-
 
 .hamburger {
     display: none;
@@ -88,13 +66,12 @@ nav { background: #272525; padding: 20px; position: sticky; top: 0; display: fle
 }
 
 
-/*Start CSS for home page*/
 .banner {
     margin: 0 auto;
     width: 100%;
     max-width: 1240px;
 }
-/*without this, the image keeps its natural pixel size even inside a smaller container, which would cause overflow*/
+
 .banner img {
     width: 100%;
     display: block;
@@ -111,15 +88,10 @@ nav { background: #272525; padding: 20px; position: sticky; top: 0; display: fle
     padding: 0 24px;
     color: white; 
 }
-/*to center the container, either set text-align: center or set max-width and margin: 0 auto; it has to be max-width, not just a fixed width value*/
 
 .container > div { width: calc(92%/4); }
-.container > div img { width: 100%; display: block; } /*if the container contains images, width:100% must be set for div img to avoid overflow*/
+.container > div img { width: 100%; display: block; } 
 
-/*End CSS for home page*/
-
-
-/*CSS for the remaining pages*/
 .title { max-width: 1600px; margin: 0 auto; padding: 16px 48px; } 
 .wrapper { max-width: 1600px; margin: 0 auto; background: linear-gradient(rgba(0,0,0,0.4)); padding: 30px 48px; display: flex; flex-wrap: wrap; }
 
@@ -160,7 +132,7 @@ p {
     color: #bababa;
     font-size: clamp(1rem, 0.929rem + 0.36vw, 1.125rem);
 }
-.r-content ul li { padding-left: 16px; } /*sets the distance between the dot and the text*/
+.r-content ul li { padding-left: 16px; } 
 
 .contact-l { flex: 1; margin-bottom: 36px; }
 .contact-r { flex: 1; margin-left: 5%; }
@@ -180,7 +152,6 @@ p {
 	margin:24px 0px;
 }
 
-/*Start CSS for the Equipment page*/
 .accordion {
   background: linear-gradient(rgba(50, 50, 50, 0.5));
   color: #e39a09;
@@ -214,7 +185,6 @@ p {
 
 .panel {
     padding: 0 18px;
-    /* background-color: #3a3a3a; */
     background: linear-gradient(rgba(0,0,0,0.3));
     max-height: 0;
     overflow: hidden;
@@ -267,7 +237,7 @@ p {
   padding: 48px 60px;
   max-width: 1400px;
   width: 100%;
-  max-height: 85vh; /*max-height and overflow-y must be defined for the content to be scrollable*/
+  max-height: 85vh; 
   overflow-y: auto;
 }
 .legal p { color: #bbb; font-size: 1rem; }
@@ -280,10 +250,8 @@ p {
 }
 .legal ul li { padding-left: 16px; }
 
-/*End CSS for the Equipment page*/
 
-
-/*Start CSS for the contact form and telephone number*/
+/*CSS for the contact form and telephone number*/
     form {
 		background:linear-gradient(rgba(120, 120, 120, 0.5));
 		padding: 32px 36px;
@@ -293,7 +261,6 @@ p {
 		display:block;
 		color: #ccc;
         font-size: 18px;
-        /* font-weight: bold; */
 	}
 	label::after { 
 		content: " *"; 
@@ -303,9 +270,6 @@ p {
 		width: 100%;
 		padding: 12px;
 		margin:10px 0 24px 0;
-		/* border: 1px solid #878787;
-        background: linear-gradient(rgba(0,0,0,0.5));
-        color: white; */
         font-size: 16px;
 		box-sizing: border-box;
 	}
@@ -320,16 +284,12 @@ p {
 	}
 	input[type=submit]:hover {
 		background-color: #a51a32;
-		/* border:1px solid #2E5B6F; */
 	}
 	textarea {
 		width: 100%;
 		height:150px;
 		padding: 12px;
 		margin:10px 0 24px 0;
-		/* border: 1px solid #878787;
-        background: linear-gradient(rgba(0,0,0,0.5));
-        color: white; */
         font-size: 16px;
 		box-sizing: border-box;
 	}
@@ -385,9 +345,6 @@ p {
     .tel,.tel:focus { color: #bababa; } 
     }
 
-/*End CSS for the contact form & telphone number*/
-
-
 footer {
 	border-top:1px solid #4c4c4c;
 	height:60px;
@@ -396,7 +353,7 @@ footer {
 	letter-spacing:1px;
 	padding:30px 0px;
 	color:#777;
-	max-width: 1600px; /*same as container - it has to be max-width, not width*/
+	max-width: 1600px; 
 	margin: 60px auto;
 }
 
@@ -429,7 +386,6 @@ footer {
     h1 { margin-top: 18px; text-align: center; }
     .wrapper { padding: 24px 34px; background:none; }
     .l-thumb { flex: auto; width: 100%; text-align: center; margin-bottom: 30px; margin-right: 0; }
-    /*flex: auto; width: 100%; removes flex: 1 and places the image in the center*/
     .l-thumb img { width: 65%; }
     .contact-r { margin: 0; }
     form { padding: 24px; }
@@ -473,8 +429,6 @@ footer {
         right: -100%;
         width: 100%;
         height: 100vh;
-        /* background: linear-gradient(rgba(0,0,0,0.3)); */
-        /*although transparent background looks cool, it works well only when the page behind the mobile menu doesn't have lots of copy.*/
         background: #111;
         flex-direction: column;
         align-items: flex-start;
@@ -544,6 +498,4 @@ footer {
     }
 
 }
-
-
 
