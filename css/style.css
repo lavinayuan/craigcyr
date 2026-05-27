@@ -87,11 +87,27 @@ nav { background: #272525; padding: 20px; position: sticky; top: 0; display: fle
     margin: 0 auto; 
     padding: 0 24px;
     color: white; 
-	margin-top: -60px;
+    margin-top: -60px;
 }
 
 .container > div { width: calc(92%/4); }
-.container > div img { width: 100%; display: block; } 
+/* .container > div img { width: 100%; display: block; } */
+
+.intro-container {
+  width: 100%;
+  overflow: hidden; 
+}
+
+.intro-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: transform 0.5s ease; 
+}
+
+.intro-container:hover img {
+  transform: scale(1.15); 
+}
 
 .title { max-width: 1600px; margin: 0 auto; padding: 16px 48px; } 
 .wrapper { max-width: 1600px; margin: 0 auto; background: linear-gradient(rgba(0,0,0,0.4)); padding: 30px 48px; display: flex; flex-wrap: wrap; }
@@ -382,7 +398,7 @@ footer {
 @media screen and (max-width: 549px) {
     body { background-color: #0c0c0c; background-image:none; } 
     .hamburger { font-size: 28px; margin-right: 8px; }
-	.container { margin-top: -30px; }
+    .container { margin-top: -30px; }
     .container > div { width: 100%; padding: 0 6%; }
     .title { padding-top: 16px; padding-bottom: 5px; padding-left: 36px; }
     h1 { margin-top: 18px; text-align: center; }
