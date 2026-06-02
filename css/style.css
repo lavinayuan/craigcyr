@@ -81,7 +81,7 @@ nav { background: #272525; padding: 20px; position: sticky; top: 0; display: fle
     display: flex; 
     justify-content: center; 
     flex-wrap: wrap; 
-    gap: 30px; 
+    gap: 40px; 
     width: 100%; 
     max-width: 1600px; 
     margin: 0 auto; 
@@ -188,16 +188,15 @@ p {
 }
 
 .accordion:after {
-  content: '\25BC';
+  content: '\002B';
   font-family: 'Roboto', sans-serif; 
-  font-size: 16px; 
+  font-size: 22px; 
   color: #e39a09;
   float: right;
-  margin-left: 5px;
 }
 
 .active:after {
-  content: '\25B2'; 
+  content: '\2013'; 
 }
 
 .panel {
