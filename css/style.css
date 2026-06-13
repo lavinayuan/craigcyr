@@ -378,7 +378,8 @@ footer {
     .menu li { padding: 12px 18px; }
     .menu li a { font-size: 1.3vw; }
     .logo img { width: 75%; }
-    .container { padding: 0 36px; gap: 24px; }
+    .container { padding: 0; gap: 30px; }
+    .container > div { width: calc(90%/4); }
     h1 { font-size: 1.8vw; }
     h2 { font-size: 1.5rem; } 
 }  
