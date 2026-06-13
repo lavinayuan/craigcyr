@@ -379,7 +379,7 @@ footer {
     .menu li a { font-size: 1.3vw; }
     .logo img { width: 75%; }
     .container { padding: 0; gap: 30px; }
-    .container > div { width: calc(90%/4); }
+    .container > div { width: calc(88%/4); }
     h1 { font-size: 1.8vw; }
     h2 { font-size: 1.5rem; } 
 }  
