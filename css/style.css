@@ -374,15 +374,14 @@ footer {
 }
 
 
-@media screen and (min-width: 1025px) and (max-width: 1500px) {
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
     .menu li { padding: 12px 18px; }
     .menu li a { font-size: 1.3vw; }
     .logo img { width: 75%; }
-    .container { padding: 0; gap: 30px; }
-    .container > div { width: calc(88%/4); }
+    .container { padding: 0 36px; gap: 24px; }
     h1 { font-size: 1.8vw; }
     h2 { font-size: 1.5rem; } 
-}  
+} 
 
 @media screen and (min-width: 550px) and (max-width: 1024px) {
     .container { gap: 24px; padding: 0 20px; margin-top: -50px; }
